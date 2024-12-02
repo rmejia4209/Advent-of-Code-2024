@@ -1,0 +1,10 @@
+# OS Files
+**/.DS_Store
+
+
+# IDE Files
+**/.vscode
+
+# Python Files
+**/.venv
+**/__pycache__
