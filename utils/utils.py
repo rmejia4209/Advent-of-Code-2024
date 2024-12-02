@@ -6,7 +6,8 @@ PARENT_DIR = os.path.dirname(os.path.dirname(__file__))
 def extract_data(day: int) -> list[str]:
     """
     Returns a list of all of the lines found in the day's input.txt
-    file (i.e., ./Day_{day}/input.txt).
+    file (i.e., ./Day_{day}/input.txt). Removes the '\n' character
+    from each line.
     """
     fp = os.path.join(PARENT_DIR, f"Day_{day}", "input.txt")
 
