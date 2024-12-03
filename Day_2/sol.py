@@ -1,4 +1,4 @@
-from utils.utils import extract_data
+from utils.utils import extract_data_to_list
 
 
 def convert_to_ints(data: list[str]) -> list[list[int]]:
@@ -76,6 +76,6 @@ def determine_safe_reports(data: list[list[int]]) -> tuple[int, int]:
 
 
 def solution() -> tuple[int, int]:
-    data = convert_to_ints(extract_data(2))
+    data = convert_to_ints(extract_data_to_list(2))
     num_safe_reports, tolerable_reports = determine_safe_reports(data)
     return num_safe_reports, tolerable_reports

@@ -1,4 +1,4 @@
-from utils.utils import extract_data
+from utils.utils import extract_data_to_list
 
 
 def split_data(
@@ -60,7 +60,7 @@ def calc_similarity(left: list[int], right: list[int]) -> int:
 
 def solution() -> tuple[int, int]:
     """Returns the solutions for Day 1 of Advent of Code"""
-    data = extract_data(1)
+    data = extract_data_to_list(1)
     left, right = split_data(data)
     solution_1 = calc_diff(left, right)
     solution_2 = calc_similarity(left, right)
