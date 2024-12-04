@@ -4,7 +4,7 @@ PARENT_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 def build_fp(day: int) -> str:
-    return os.path.join(PARENT_DIR, f"Day_{day}", "input.txt") 
+    return os.path.join(PARENT_DIR, f"Day_{day}", "input.txt")
 
 
 def extract_data_to_list(day: int) -> list[str]:
