@@ -55,7 +55,7 @@ def find_all_xmas(data: list[str]) -> tuple[int, int]:
 
 
 def solution() -> tuple[int, int]:
-
+    """Returns a solution as a tuple of ints"""
     data = add_padding(extract_data_to_list(4))
     sol_1, sol_2 = find_all_xmas(data)
 
