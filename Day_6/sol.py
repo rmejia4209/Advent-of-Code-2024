@@ -130,7 +130,6 @@ def num_infinite_loops(data: list[list[str]], start: tuple[int, int]) -> int:
     return len(infinite_loops)
 
 
-
 def solution() -> tuple[int, int]:
     """Returns a solution as a tuple of ints"""
     data = extract_data_to_list(6)
