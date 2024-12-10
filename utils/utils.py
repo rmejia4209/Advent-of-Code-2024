@@ -20,6 +20,14 @@ def extract_data_to_list(day: int) -> list[str]:
     return data
 
 
+def extract_data_to_list_of_list(day: int) -> list[list[str]]:
+    """
+    Returns a list of list of characters found in a day's input.txt
+    file. Removes the '\n' character.
+    """
+    return [list(row) for row in extract_data_to_list(day)]
+
+
 def merge_strings(data: list[str]) -> str:
     """Returns one string composed of all of the strings in the input"""
     merged_string = ""

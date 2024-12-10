@@ -33,7 +33,7 @@ def create_operation_permutations(
 
 def perform_operations(nums: list[int], operations: tuple[str, ...]) -> int:
     """
-    Returns the total results from performing the operation in operations 
+    Returns the total results from performing the operation in operations
     left to right on nums
     """
 
