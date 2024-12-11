@@ -37,7 +37,7 @@ def get_val(grid: Grid, point: Point) -> int:
 
 def get_available_moves(point: Point, cur_val: int, grid: Grid) -> list[Point]:
     """
-    Returns a list of points that are one more than 
+    Returns a list of points that are one more than
     the value at point on the grid
     """
     row, col = point
