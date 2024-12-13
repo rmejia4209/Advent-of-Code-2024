@@ -35,7 +35,7 @@ def is_inside_corner(
     grid: Grid, corner: Point, point_1: Point, point_2: Point
 ) -> bool:
     """
-    Returns True if corner, point_1, point_2 form 
+    Returns True if corner, point_1, point_2 form
     a Match, Different, Match pattern
     """
     # Inside corners cannot occur on boundaries
