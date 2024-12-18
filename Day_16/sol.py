@@ -156,7 +156,7 @@ def solve_maze(
             last_pos = position
             position = next_pos
             curr_dir = next_dir
-            moves = get_options(grid, position, last_pos) 
+            moves = get_options(grid, position, last_pos)
 
     for next_pos, next_dir in moves:
         new_score = update_score(score, curr_dir, next_dir)
