@@ -83,7 +83,7 @@ def bxc(registers: Registers, operand: int, pos: int) -> int:
 
 def out(registers: Registers, operand: int, pos: int) -> int:
     """
-    Prints the value of the combo operand modulo 8. Returns the next 
+    Prints the value of the combo operand modulo 8. Returns the next
     instruction position.
     """
     combo_operand = get_combo_operand(operand, registers)
@@ -132,7 +132,6 @@ def find_A(data: list[str], stack: Stack) -> None:
     while j >= 0:
         found = False
         A = sum([digits[i]*(8**(i)) for i in range(len(stack))])
-        print(f'Finding {stack[j]}')
         for i in range(cache[j]+1, 8):
             registers = init_registers(data)
             registers['A'] = A + i*(8**j)
